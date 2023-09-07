@@ -1,0 +1,11 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: python-scraper-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: python-scraper-job
+        image: heshaaa/python-scraper:0.5
+      restartPolicy: Never
