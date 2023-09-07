@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     dbname="puffin_books",
     user="postgres",
     password="root",
-    host="postgres-service",
+    host="localhost",
     port="5432"
 )
 
@@ -48,4 +48,4 @@ async def get_books():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port="80")
+    uvicorn.run(app, host="0.0.0.0", port="8000")

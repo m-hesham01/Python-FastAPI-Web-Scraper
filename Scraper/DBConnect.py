@@ -5,7 +5,7 @@ class DBConnect:
         self.DB_NAME = "puffin_books"
         self.DB_USER = "postgres"
         self.DB_PASS = "root"
-        self.DB_HOST = "postgres-service"
+        self.DB_HOST = "localhost"
         self.DB_PORT = "5432"
         self.conn = psycopg2.connect(database=self.DB_NAME, user=self.DB_USER, password=self.DB_PASS, host=self.DB_HOST, port=self.DB_PORT)
         print("successfully connected to DB")
